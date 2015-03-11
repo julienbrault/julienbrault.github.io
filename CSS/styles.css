@@ -1,0 +1,27 @@
+#biographie{background-color:deepskyblue}
+
+#ms{background-color:greenyellow;color:white;}
+
+#contacts{background-color:yellow}
+
+
+body{color:black; font-size: large}
+
+
+h1{font-size:60px }
+h2{color:black; font-size: 30px}
+
+h1, h2, h3 {
+    font-family: 'Abel', serif;
+    font-size:
+}
+
+body {
+    margin-left: 0; margin-right: 0}
+
+body {
+    text-align: center;
+}
+
+.menu {display: inline-block}
+
