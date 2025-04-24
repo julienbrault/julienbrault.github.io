@@ -1,107 +1,196 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
-
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Julien Brault - The Official Website Of The Growtholic</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-body {
-    background-image: url("snapheadphones3.png"); margin-top: 5%; margin-left:5%; margin-left:5%;
-}
-
-h1, h2, h3 {background-color:black ; text-align:center; color:white; display: inline; }
-
-a {
-    color: yellow;
-}
-
-h1 {
-    font-size: 2.3em;
-}
-
-
-
-
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Brault - Fintech Entrepreneur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            font-family: 'Caveat', cursive, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .image-container {
+            flex: 1;
+            max-width: 300px;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .text-content {
+            flex: 2;
+            font-family: 'Caveat', cursive, sans-serif;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #222;
+            font-family: 'Caveat', cursive, sans-serif;
+            font-weight: 700;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: 'Caveat', cursive, sans-serif;
+            font-weight: 500;
+        }
+        
+        .newsletter-embed {
+            margin: 30px 0;
+        }
+        
+        .social-links {
+            margin: 30px 0;
+        }
+        
+        .social-links h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            font-family: 'Caveat', cursive, sans-serif;
+            font-weight: 600;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #f8f8f8;
+            border-radius: 50%;
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .linkedin:hover {
+            background-color: #0077b5;
+            color: white;
+        }
+        
+        .twitter:hover {
+            background-color: #1da1f2;
+            color: white;
+        }
+        
+        .instagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            color: white;
+        }
+        
+        .youtube:hover {
+            background-color: #ff0000;
+            color: white;
+        }
+        
+        .tiktok:hover {
+            background-color: #000000;
+            color: white;
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column-reverse;
+            }
+            
+            .image-container {
+                max-width: 100%;
+                margin: 20px auto;
+            }
+            
+            .social-icons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<h1>Hi, <br>My Name is Julien Brault and I am a Growtholic.</h1><br><br>
-<h2>I am also a former book publisher, turned social media strategist, turned tech journalist, turned fintech marketer and finally turned fintech entrepreneur at <a href="http://hardbacon.ca">Hardbacon</a>.</h2><br><br>
-<h3>If you're not scared to follow me on the path of growtholism, <br> leave me your email address and I'm going to send you awesome updates related to growth and startups. </h3>
-<br><br>
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:black; color:white ;clear:left; font:14px Helvetica,Arial,sans-serif; width:400px;}
-	
-</style>
-<div id="mc_embed_signup">
-<form action="//julienbrault.us13.list-manage.com/subscribe/post?u=9e1f839b7e9508194b2e52b00&amp;id=c835e1bd4a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address </label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9e1f839b7e9508194b2e52b00_c835e1bd4a" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img src="https://i.ibb.co/8j5vCyB/waving-image.gif" alt="Julien Brault waving">
+            </div>
+            <div class="text-content">
+                <h1>Hi, my name is Julien Brault</h1>
+                <p>I'm a fintech entrepreneur with over 10 years of experience in fintech, working as a product manager, journalist, marketing director, and founder. With my entrepreneurial background, I'm a versatile professional skilled at both marketing financial products and designing applications from start to finish.</p>
+                
+                <p>I currently send a free weekly newsletter called <a href="https://www.globalfintechinsider.com/" style="color: #00CCCC; text-decoration: underline;">Global Fintech Insider</a>.</p>
+                
+                <div class="newsletter-embed">
+                    <iframe src="https://www.globalfintechinsider.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                </div>
+                
+                <div class="social-links">
+                    <h2>If you don't mind seeing a bunch of fintech content in your feed, feel free to follow on me on social media!</h2>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/julienbrault/" class="social-icon linkedin" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/julienbrault" class="social-icon twitter" target="_blank" title="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/julienbrault" class="social-icon instagram" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fintechjulien" class="social-icon youtube" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@fintechdude" class="social-icon tiktok" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <p>If you want to pick my brain on something, feel free to hire me on <a href="https://intro.co/julienbrault" style="color: #00CCCC; text-decoration: underline;">Intro</a>!</p>
+            </div>
+        </div>
     </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
-<br>
-<h3>You can also follow me on <a href="https://www.snapchat.com/add/jrbrault">Snapchat</a>, <a href="https://www.instagram.com/julienbrault/">Instagram</a>, <a href="https://www.facebook.com/brault">Facebook</a>, <a href="https://www.linkedin.com/in/julienbrault">Linkedin </a>, <a href="https://twitter.com/julienbrault">Twitter</a> and <a href="https://medium.com/@julienbrault">Medium</a>. </h3>
-
-<br><br>	
-	<h3>One last thing before you leave! My startup Hardbacon is currently doing a crowdfunding campaign on Ulule to finance an amazing course about investment, so feel free to contribute and share!</h3>
-	
-	<br><br>
-<iframe frameborder="0" height="360px" width="300px" src="https://www.ulule.com/hardbacon/widget.html" scrolling="no"></iframe>
-
-
-
-
-
 </body>
 </html>
